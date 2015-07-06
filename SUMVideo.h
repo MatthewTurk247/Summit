@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+//Statement: The AVFoundation foundations will marginally help with creating and implementing SUMVideo. -Matthew Turk
+//P.S. Let me know if the comments are too much... -Matthew Turk
+
 @interface SUMVideo:NSObject
 
 @end
