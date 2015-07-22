@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SUMVideo;
 
 @interface SUMVideoTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *SVTImage;
-@property (nonatomic, strong) NSArray *SVTTitle;
-@property (nonatomic, strong) NSArray *SVTDescription;
-@property (nonatomic, strong) NSArray *SVTCreatorImage;
+@property (nonatomic, strong) SUMVideo *video;
 @property (nonatomic, assign) BOOL *SVTIsTop;
 
 @end

@@ -11,7 +11,7 @@
 //Statement: The AVFoundation foundations will marginally help with creating and implementing SUMVideo. -Matthew Turk
 //P.S. Let me know if the comments are too much... -Matthew Turk
 
-@interface SUMVid:NSObject
+@interface SUMVideo:NSObject
 
 @property (nonatomic, strong) NSArray *SVDescription;
 @property (nonatomic, strong) NSArray *SVTitle;

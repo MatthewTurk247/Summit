@@ -7,7 +7,7 @@
 //
 
 #import "SUMCategory.h"
-#import "SUMVid.h"
+#import "SUMVideo.h"
 
 @interface SUMCategory ()
 

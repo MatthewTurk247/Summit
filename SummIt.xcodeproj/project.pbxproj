@@ -11,7 +11,7 @@
 		EB9001E91B5E88CE008C9EA4 /* SUMVideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9001E81B5E88CE008C9EA4 /* SUMVideoTableViewController.m */; };
 		EB9001EC1B5E8F22008C9EA4 /* SUMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9001EB1B5E8F22008C9EA4 /* SUMTableViewCell.m */; };
 		EB9001F91B5F49FF008C9EA4 /* SUMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9001F81B5F49FF008C9EA4 /* SUMCategory.m */; };
-		EBC669061B5F52CD003D6E07 /* SUMVid.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC669051B5F52CD003D6E07 /* SUMVid.m */; };
+		EBC669061B5F52CD003D6E07 /* SUMVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC669051B5F52CD003D6E07 /* SUMVideo.m */; };
 		EBC669081B5F5439003D6E07 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC669071B5F5439003D6E07 /* CoreData.framework */; };
 		EBCF355A1B49EA6000C6A8DB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCF35581B49EA6000C6A8DB /* Bolts.framework */; };
 		EBCF355B1B49EA6000C6A8DB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCF35591B49EA6000C6A8DB /* Parse.framework */; };
@@ -59,8 +59,8 @@
 		EB9001EB1B5E8F22008C9EA4 /* SUMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUMTableViewCell.m; sourceTree = "<group>"; };
 		EB9001F71B5F49FF008C9EA4 /* SUMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUMCategory.h; sourceTree = "<group>"; };
 		EB9001F81B5F49FF008C9EA4 /* SUMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUMCategory.m; sourceTree = "<group>"; };
-		EBC669041B5F52CD003D6E07 /* SUMVid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUMVid.h; sourceTree = "<group>"; };
-		EBC669051B5F52CD003D6E07 /* SUMVid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUMVid.m; sourceTree = "<group>"; };
+		EBC669041B5F52CD003D6E07 /* SUMVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUMVideo.h; sourceTree = "<group>"; };
+		EBC669051B5F52CD003D6E07 /* SUMVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUMVideo.m; sourceTree = "<group>"; };
 		EBC669071B5F5439003D6E07 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EBC669091B5F5498003D6E07 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		EBCF35581B49EA6000C6A8DB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -166,8 +166,8 @@
 		EBC669031B5F4EE0003D6E07 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EBC669041B5F52CD003D6E07 /* SUMVid.h */,
-				EBC669051B5F52CD003D6E07 /* SUMVid.m */,
+				EBC669041B5F52CD003D6E07 /* SUMVideo.h */,
+				EBC669051B5F52CD003D6E07 /* SUMVideo.m */,
 				EB9001F71B5F49FF008C9EA4 /* SUMCategory.h */,
 				EB9001F81B5F49FF008C9EA4 /* SUMCategory.m */,
 			);
@@ -381,7 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBCF35781B4AFEF600C6A8DB /* SUMUser.m in Sources */,
-				EBC669061B5F52CD003D6E07 /* SUMVid.m in Sources */,
+				EBC669061B5F52CD003D6E07 /* SUMVideo.m in Sources */,
 				EBFF474E1B49D851004F539C /* SummIt.xcdatamodeld in Sources */,
 				EB9001F91B5F49FF008C9EA4 /* SUMCategory.m in Sources */,
 				EB9001E91B5E88CE008C9EA4 /* SUMVideoTableViewController.m in Sources */,

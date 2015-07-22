@@ -9,10 +9,10 @@
 #import "SUMVideoTableViewController.h"
 #import "SUMTableViewCell.h"
 #import <QuartzCore/QuartzCore.h>
-#import "SUMVid.h"
+#import "SUMVideo.h"
 
 @interface SUMVideoTableViewController ()
-@property SUMVid *vid;
+
 @end
 
 @implementation SUMVideoTableViewController
@@ -27,10 +27,7 @@
     #define yellow [UIColor colorWithRed:241.0/255 green:196.0/255 blue:15.0/255 alpha:1.0]
     #define grey [UIColor colorWithRed:146.0/255 green:146.0/255 blue:146.0/255 alpha:1.0]
     self.navigationController.navigationBar.barTintColor = black;
-    _SVTTitle = @[@"The Surface", @"Samsung S6 Edge Review!", @"Can Birds Actually Deliver Messages?", @"How to Tie a Merovingian Knot | Men's Fashion", @"Neil deGrasse Tyson Explains The End Of 'Interstellar'", @"The Oort Cloud: Crash Course Astronomy #22", @"Koenigsegg Regera at Geneva 2015 | evo MOTOR SHOWS"];
-    _SVTDescription = @[@"Microsoft", @"Marques Brownlee", @"ASAP Science", @"Howcast Men's Fashion", @"Business Insider", @"Crash Course", @"EVO"];
-    _SVTImage = @[@"surface", @"s6.jpg", @"can.jpg", @"mero.jpg", @"tyson.jpg", @"oort", @"regera"];
-    _SVTCreatorImage = @[@"microsoft.jpg", @"brownlee.jpg", @"asap.jpg", @"howcast.jpg", @"bi.jpg", @"cc", @"evo.jpg"];
+    self.video = [[SUMVideo alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,7 +44,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return _SVTTitle.count;
+    return self.video.SVTitle.count;
 }
 
 
@@ -60,10 +57,10 @@
 //    cell.SVTDescriptionLabel.text = vid.SVCreator[row];
 //    cell.SVTThumbImage.image = [UIImage imageNamed:vid.SVCreatorImage[row]];
 //    cell.SVTCreatorImageView.image = [UIImage imageNamed:vid.SVCreator[row]];
-    cell.SVTTitleLabel.text = self.SVTTitle[row];
-    cell.SVTDescriptionLabel.text = self.SVTDescription[row];
-    cell.SVTThumbImage.image = [UIImage imageNamed:self.SVTImage[row]];
-    cell.SVTCreatorImageView.image = [UIImage imageNamed:self.SVTCreatorImage[row]];
+    cell.SVTTitleLabel.text = self.video.SVTitle[row];
+    cell.SVTDescriptionLabel.text = self.video.SVCreator[row];
+    cell.SVTThumbImage.image = [UIImage imageNamed:self.video.SVImage[row]];
+    cell.SVTCreatorImageView.image = [UIImage imageNamed:self.video.SVCreatorImage[row]];
     cell.SVTCreatorImageView.layer.cornerRadius = 8.0;
     cell.SVTCreatorImageView.layer.masksToBounds = YES;
     if (_SVTIsTop == YES) {
