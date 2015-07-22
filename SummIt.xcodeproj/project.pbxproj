@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		DB9199BD921C996B029A3840 /* libPods-SummIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265117B648EDA6B623204B19 /* libPods-SummIt.a */; };
+		EB9001E91B5E88CE008C9EA4 /* SUMVideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9001E81B5E88CE008C9EA4 /* SUMVideoTableViewController.m */; };
+		EB9001EC1B5E8F22008C9EA4 /* SUMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9001EB1B5E8F22008C9EA4 /* SUMTableViewCell.m */; };
+		EB9001F91B5F49FF008C9EA4 /* SUMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9001F81B5F49FF008C9EA4 /* SUMCategory.m */; };
+		EBC669061B5F52CD003D6E07 /* SUMVid.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC669051B5F52CD003D6E07 /* SUMVid.m */; };
+		EBC669081B5F5439003D6E07 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC669071B5F5439003D6E07 /* CoreData.framework */; };
 		EBCF355A1B49EA6000C6A8DB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCF35581B49EA6000C6A8DB /* Bolts.framework */; };
 		EBCF355B1B49EA6000C6A8DB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCF35591B49EA6000C6A8DB /* Parse.framework */; };
 		EBCF355D1B49EAE200C6A8DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCF355C1B49EAE200C6A8DB /* AudioToolbox.framework */; };
@@ -32,7 +37,6 @@
 		EBFF47561B49D851004F539C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFF47551B49D851004F539C /* Images.xcassets */; };
 		EBFF47591B49D851004F539C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBFF47571B49D851004F539C /* LaunchScreen.xib */; };
 		EBFF47651B49D851004F539C /* SummItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFF47641B49D851004F539C /* SummItTests.m */; };
-		EBFF47701B49D89D004F539C /* SUMVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFF476F1B49D89D004F539C /* SUMVideo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,16 @@
 		1206473BB9D56E209901719C /* Pods-SummIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-SummIt/Pods-SummIt.release.xcconfig"; sourceTree = "<group>"; };
 		265117B648EDA6B623204B19 /* libPods-SummIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SummIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8279BC2008373CA42EB060F /* Pods-SummIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SummIt/Pods-SummIt.debug.xcconfig"; sourceTree = "<group>"; };
+		EB9001E71B5E88CE008C9EA4 /* SUMVideoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUMVideoTableViewController.h; sourceTree = "<group>"; };
+		EB9001E81B5E88CE008C9EA4 /* SUMVideoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUMVideoTableViewController.m; sourceTree = "<group>"; };
+		EB9001EA1B5E8F22008C9EA4 /* SUMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUMTableViewCell.h; sourceTree = "<group>"; };
+		EB9001EB1B5E8F22008C9EA4 /* SUMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUMTableViewCell.m; sourceTree = "<group>"; };
+		EB9001F71B5F49FF008C9EA4 /* SUMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUMCategory.h; sourceTree = "<group>"; };
+		EB9001F81B5F49FF008C9EA4 /* SUMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUMCategory.m; sourceTree = "<group>"; };
+		EBC669041B5F52CD003D6E07 /* SUMVid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUMVid.h; sourceTree = "<group>"; };
+		EBC669051B5F52CD003D6E07 /* SUMVid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUMVid.m; sourceTree = "<group>"; };
+		EBC669071B5F5439003D6E07 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EBC669091B5F5498003D6E07 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		EBCF35581B49EA6000C6A8DB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		EBCF35591B49EA6000C6A8DB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		EBCF355C1B49EAE200C6A8DB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -80,8 +94,6 @@
 		EBFF475E1B49D851004F539C /* SummItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SummItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFF47631B49D851004F539C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBFF47641B49D851004F539C /* SummItTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SummItTests.m; sourceTree = "<group>"; };
-		EBFF476E1B49D89D004F539C /* SUMVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SUMVideo.h; path = ../SUMVideo.h; sourceTree = "<group>"; };
-		EBFF476F1B49D89D004F539C /* SUMVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SUMVideo.m; path = ../SUMVideo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC669081B5F5439003D6E07 /* CoreData.framework in Frameworks */,
 				EBCF35751B49ECF400C6A8DB /* Accounts.framework in Frameworks */,
 				EBCF35731B49ECE000C6A8DB /* Social.framework in Frameworks */,
 				EBCF35711B49EB7600C6A8DB /* libsqlite3.dylib in Frameworks */,
@@ -121,6 +134,8 @@
 		3ED74B3B55B95623D6223169 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBC669091B5F5498003D6E07 /* Twitter.framework */,
+				EBC669071B5F5439003D6E07 /* CoreData.framework */,
 				EBCF35741B49ECF400C6A8DB /* Accounts.framework */,
 				EBCF35721B49ECE000C6A8DB /* Social.framework */,
 				EBCF35701B49EB7600C6A8DB /* libsqlite3.dylib */,
@@ -146,6 +161,17 @@
 				1206473BB9D56E209901719C /* Pods-SummIt.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBC669031B5F4EE0003D6E07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBC669041B5F52CD003D6E07 /* SUMVid.h */,
+				EBC669051B5F52CD003D6E07 /* SUMVid.m */,
+				EB9001F71B5F49FF008C9EA4 /* SUMCategory.h */,
+				EB9001F81B5F49FF008C9EA4 /* SUMCategory.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		EBFF47391B49D851004F539C = {
@@ -175,10 +201,13 @@
 				EBCF35591B49EA6000C6A8DB /* Parse.framework */,
 				EBFF47491B49D851004F539C /* AppDelegate.h */,
 				EBFF474A1B49D851004F539C /* AppDelegate.m */,
+				EB9001E71B5E88CE008C9EA4 /* SUMVideoTableViewController.h */,
+				EB9001E81B5E88CE008C9EA4 /* SUMVideoTableViewController.m */,
+				EB9001EA1B5E8F22008C9EA4 /* SUMTableViewCell.h */,
+				EB9001EB1B5E8F22008C9EA4 /* SUMTableViewCell.m */,
 				EBFF474F1B49D851004F539C /* ViewController.h */,
 				EBFF47501B49D851004F539C /* ViewController.m */,
-				EBFF476E1B49D89D004F539C /* SUMVideo.h */,
-				EBFF476F1B49D89D004F539C /* SUMVideo.m */,
+				EBC669031B5F4EE0003D6E07 /* Model */,
 				EBCF35761B4AFEF600C6A8DB /* SUMUser.h */,
 				EBCF35771B4AFEF600C6A8DB /* SUMUser.m */,
 				EBFF47521B49D851004F539C /* Main.storyboard */,
@@ -352,9 +381,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBCF35781B4AFEF600C6A8DB /* SUMUser.m in Sources */,
+				EBC669061B5F52CD003D6E07 /* SUMVid.m in Sources */,
 				EBFF474E1B49D851004F539C /* SummIt.xcdatamodeld in Sources */,
-				EBFF47701B49D89D004F539C /* SUMVideo.m in Sources */,
+				EB9001F91B5F49FF008C9EA4 /* SUMCategory.m in Sources */,
+				EB9001E91B5E88CE008C9EA4 /* SUMVideoTableViewController.m in Sources */,
 				EBFF474B1B49D851004F539C /* AppDelegate.m in Sources */,
+				EB9001EC1B5E8F22008C9EA4 /* SUMTableViewCell.m in Sources */,
 				EBFF47511B49D851004F539C /* ViewController.m in Sources */,
 				EBFF47481B49D851004F539C /* main.m in Sources */,
 			);
@@ -485,6 +517,7 @@
 			baseConfigurationReference = C8279BC2008373CA42EB060F /* Pods-SummIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SummIt",
@@ -492,6 +525,8 @@
 				INFOPLIST_FILE = SummIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SummIt/SummIt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -500,6 +535,7 @@
 			baseConfigurationReference = 1206473BB9D56E209901719C /* Pods-SummIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SummIt",
@@ -507,6 +543,7 @@
 				INFOPLIST_FILE = SummIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SummIt/SummIt-Bridging-Header.h";
 			};
 			name = Release;
 		};
