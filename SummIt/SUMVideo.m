@@ -12,15 +12,23 @@
 @end
 
 @implementation SUMVideo
-
-- (instancetype)init
-{
+//- (instancetype)initWithName:(NSArray *)titled:(NSArray *)creator
+//- (instancetype)initWithName:(NSArray *)titled:(NSArray *)creator:(NSArray *)creatorImage:(NSArray *)vidImage {
+//    if (self) {
+//        self.SVTitle = titled;
+//        self.SVCreator = creator;
+//        self.SVCreatorImage = creatorImage;
+//        self.SVImage = vidImage;
+//    }
+//    return self;
+//}
+- (instancetype)init {
     self = [super init];
     if (self) {
-        self.SVTitle = @[@"The Surface", @"Samsung S6 Edge Review!", @"Can Birds Actually Deliver Messages?", @"How to Tie a Merovingian Knot | Men's Fashion", @"Neil deGrasse Tyson Explains The End Of 'Interstellar'", @"The Oort Cloud: Crash Course Astronomy #22", @"Koenigsegg Regera at Geneva 2015 | evo MOTOR SHOWS"];
-        self.SVCreator = @[@"Microsoft", @"Marques Brownlee", @"ASAP Science", @"Howcast Men's Fashion", @"Business Insider", @"Crash Course", @"EVO"];
-        self.SVImage = @[@"surface", @"s6.jpg", @"can.jpg", @"mero.jpg", @"tyson.jpg", @"oort", @"regera"];
-        self.SVCreatorImage = @[@"microsoft.jpg", @"brownlee.jpg", @"asap.jpg", @"howcast.jpg", @"bi.jpg", @"cc", @"evo.jpg"];
+        self.SVTitle = @[@"Cadillac ATS 2015 Coupe", @"Samsung S6 Edge Review!", @"Can Birds Actually Deliver Messages?", @"How to Tie a Merovingian Knot | Men's Fashion", @"Neil deGrasse Tyson Explains The End Of 'Interstellar'", @"The Oort Cloud: Crash Course Astronomy #22", @"Koenigsegg Regera at Geneva 2015 | evo MOTOR SHOWS"];
+        self.SVCreator = @[@"Cadillac", @"Marques Brownlee", @"ASAP Science", @"Howcast Men's Fashion", @"Business Insider", @"Crash Course", @"EVO"];
+        self.SVImage = @[@"ats", @"s6", @"can", @"mero", @"tyson", @"oort", @"regera"];
+        self.SVCreatorImage = @[@"cadillac", @"brownlee", @"asap", @"howcast", @"bi", @"cc", @"evo"];
     }
     return self;
 }

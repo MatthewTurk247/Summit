@@ -13,5 +13,6 @@
 
 @property (nonatomic, strong) SUMVideo *video;
 @property (nonatomic, assign) BOOL *SVTIsTop;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *SVTSearchIcon;
 
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SUMVideo.h"
 
 @interface SUMCategory : NSObject
-
+@property(nonatomic, strong) NSString *name;
+@property(nonatomic, strong) SUMVideo *vids;
++(SUMCategory *)videos;
 @end

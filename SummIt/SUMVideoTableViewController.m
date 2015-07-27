@@ -26,8 +26,15 @@
     #define black [UIColor colorWithRed:32.0/255 green:34.0/255 blue:41.0/255 alpha:1.0]
     #define yellow [UIColor colorWithRed:241.0/255 green:196.0/255 blue:15.0/255 alpha:1.0]
     #define grey [UIColor colorWithRed:146.0/255 green:146.0/255 blue:146.0/255 alpha:1.0]
+    #define white [UIColor colorWithRed:236.0/255 green:240.0/255 blue:241.0/255 alpha:1.0]
     self.navigationController.navigationBar.barTintColor = black;
     self.video = [[SUMVideo alloc] init];
+    self.SVTSearchIcon = _SVTSearchIcon;
+    //UIBarButtonItem *SVTSearchIcon = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(search)];
+    UIBarButtonItem *SVTSettingsIcon = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"SUMSettingsIcon"] style:UIBarButtonItemStylePlain target:self action:@selector(settings)];
+    SVTSettingsIcon.tintColor = white;
+    //SVTSearchIcon.tintColor = white;
+    [self.navigationItem setRightBarButtonItems:[NSArray arrayWithObjects:SVTSettingsIcon, _SVTSearchIcon, nil]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -64,10 +71,12 @@
     cell.SVTCreatorImageView.layer.cornerRadius = 8.0;
     cell.SVTCreatorImageView.layer.masksToBounds = YES;
     if (_SVTIsTop == YES) {
+        cell.SVSourceWaterMark.hidden = true;
         cell.SVTCellSeparator.backgroundColor = yellow;
         cell.SVTAdIndicatorPill.hidden = NO;
         } else {
-            cell.SVTCellSeparator.backgroundColor = grey;
+            cell.SVSourceWaterMark.hidden = false;
+        cell.SVTCellSeparator.backgroundColor = grey;
         cell.SVTAdIndicatorPill.hidden = YES;
     }
     

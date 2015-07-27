@@ -16,5 +16,6 @@
 @property (nonatomic, strong) IBOutlet UIImageView *SVTCreatorImageView;
 @property (nonatomic, strong) IBOutlet UIImageView *SVTAdIndicatorPill;
 @property (nonatomic, strong) IBOutlet UIView *SVTCellSeparator;
+@property (nonatomic, strong) IBOutlet UIImageView *SVSourceWaterMark;
 
 @end
