@@ -18,15 +18,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent]; //Just making the status bar white so it can clearly and aesthetically be seen by the user. -Matthew Turk
-    // [Optional] Power your app with Local Datastore. For more info, go to
-    // https://parse.com/docs/ios_guide#localdatastore/iOS
-    [Parse enableLocalDatastore];
-    
-    // Initialize Parse.
-    [Parse setApplicationId:@"U7mbMcId5WCBJK6eR6BPj3I3VN6IJogkllo6eO15"
-                  clientKey:@"sZEbyXyUhgfIK6MrYRy4VQFmRu19VZgaVukmxiGg"];
-    // [Optional] Track statistics around application opens.
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+//    // [Optional] Power your app with Local Datastore. For more info, go to
+//    // https://parse.com/docs/ios_guide#localdatastore/iOS
+//    [Parse enableLocalDatastore];
+//    
+//    // Initialize Parse.
+//    [Parse setApplicationId:@"U7mbMcId5WCBJK6eR6BPj3I3VN6IJogkllo6eO15"
+//                  clientKey:@"sZEbyXyUhgfIK6MrYRy4VQFmRu19VZgaVukmxiGg"];
+//    // [Optional] Track statistics around application opens.
+//    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }
 

@@ -16,6 +16,9 @@
 @end
 
 @implementation SUMVideoTableViewController
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
@@ -35,8 +38,12 @@
     SVTSettingsIcon.tintColor = white;
     //SVTSearchIcon.tintColor = white;
     [self.navigationItem setRightBarButtonItems:[NSArray arrayWithObjects:SVTSettingsIcon, _SVTSearchIcon, nil]];
+    self.video.SVLoadPopularVideos;
 }
 
+//----
+//NSURL *url = [NSURL URLWithString:@"http://rest-service.guides.spring.io/greeting"];
+//    NSURL *url = [NSURL URLWithString:@"https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLrEnWoR732-BHrPp_Pm8_VleD68f9s14-&key=AIzaSyArbT63UVCvk0RkArDgOwcW-gfUJJ8-ea4"];
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -65,19 +72,28 @@
 //    cell.SVTThumbImage.image = [UIImage imageNamed:vid.SVCreatorImage[row]];
 //    cell.SVTCreatorImageView.image = [UIImage imageNamed:vid.SVCreator[row]];
     cell.SVTTitleLabel.text = self.video.SVTitle[row];
+    cell.SVTViewCountLabel.text = [self.video.SVViewCount[row] stringByAppendingString:@" Views"];
     cell.SVTDescriptionLabel.text = self.video.SVCreator[row];
     cell.SVTThumbImage.image = [UIImage imageNamed:self.video.SVImage[row]];
     cell.SVTCreatorImageView.image = [UIImage imageNamed:self.video.SVCreatorImage[row]];
+    cell.SVTAgeLabel.text = [self.video.SVAge[row] stringByAppendingString:@" Ago"];
     cell.SVTCreatorImageView.layer.cornerRadius = 8.0;
     cell.SVTCreatorImageView.layer.masksToBounds = YES;
+    cell.view.layer.cornerRadius = 8.0;
     if (_SVTIsTop == YES) {
         cell.SVSourceWaterMark.hidden = true;
         cell.SVTCellSeparator.backgroundColor = yellow;
-        cell.SVTAdIndicatorPill.hidden = NO;
+        cell.SVTAdIndicatorPillView.hidden = NO;
+        cell.SVTAdIndicatorPillLabel.hidden = NO;
+        cell.SVTAgeLabel.hidden = YES;
+        cell.SVTViewCountLabel.hidden = YES;
         } else {
-            cell.SVSourceWaterMark.hidden = false;
+        cell.SVTViewCountLabel.hidden = NO;
+        cell.SVTAgeLabel.hidden = NO;
+        cell.SVSourceWaterMark.hidden = false;
         cell.SVTCellSeparator.backgroundColor = grey;
-        cell.SVTAdIndicatorPill.hidden = YES;
+        cell.SVTAdIndicatorPillView.hidden = YES;
+        cell.SVTAdIndicatorPillLabel.hidden = YES;
     }
     
     return cell;

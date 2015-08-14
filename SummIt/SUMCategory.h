@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "SUMVideo.h"
 
+@class SUMVideo;
+
 @interface SUMCategory : NSObject
 @property(nonatomic, strong) NSString *name;
 @property(nonatomic, strong) SUMVideo *vids;

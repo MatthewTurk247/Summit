@@ -7,7 +7,7 @@
 //
 
 #import "SUMCategory.h"
-//#import "SUMVideo.h"
+#import "SUMVideo.h"
 
 @interface SUMCategory ()
 +(SUMCategory *)PopularVideos;
@@ -15,13 +15,14 @@
 
 @implementation SUMCategory
 
-- (instancetype)initWithName:(NSArray *)named:(NSArray *)includeVids {
-    if (self) {
-        self.name = named;
-        self.vids = includeVids;
-    }
-    return self;
-}
+//- (instancetype)initWithName:(NSArray *)named:(NSArray *)includeVids {
+//    if (self) {
+//        self.name = named;
+//        self.vids = includeVids;
+//    }
+//    return self;
+//}
+
 
 //+(SUMCategory *)videos {
 //    //return [self.PopularVideos()]

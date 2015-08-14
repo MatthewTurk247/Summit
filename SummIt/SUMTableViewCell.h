@@ -10,12 +10,16 @@
 
 @interface SUMTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) IBOutlet UILabel *SVTTitleLabel;
-@property (nonatomic, strong) IBOutlet UILabel *SVTDescriptionLabel;
-@property (nonatomic, strong) IBOutlet UIImageView *SVTThumbImage;
-@property (nonatomic, strong) IBOutlet UIImageView *SVTCreatorImageView;
-@property (nonatomic, strong) IBOutlet UIImageView *SVTAdIndicatorPill;
-@property (nonatomic, strong) IBOutlet UIView *SVTCellSeparator;
-@property (nonatomic, strong) IBOutlet UIImageView *SVSourceWaterMark;
+@property (strong, nonatomic) IBOutlet UILabel *SVTTitleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *SVTDescriptionLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *SVTThumbImage;
+@property (strong, nonatomic) IBOutlet UIImageView *SVTCreatorImageView;
+@property (strong, nonatomic) IBOutlet UIView *SVTCellSeparator;
+@property (strong, nonatomic) IBOutlet UIImageView *SVSourceWaterMark;
+@property (strong, nonatomic) IBOutlet UILabel * SVTAgeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *SVTViewCountLabel;
+@property (strong, nonatomic) IBOutlet UIView *view;
+@property (strong, nonatomic) IBOutlet UIView *SVTAdIndicatorPillView;
+@property (strong, nonatomic) IBOutlet UILabel *SVTAdIndicatorPillLabel;
 
 @end
